@@ -1,37 +1,154 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<title>CV Angelo Borges</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
 
-You can use the [editor on GitHub](https://github.com/angelopborges/angelopborges.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="images/forma.jpeg" style="width:100%" alt="foto">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Angelo Borges</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Estatístico - Analytics</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Vila Velha, ES</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>angelopborges@mail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(31) 9 9329-4130</p>
+          <hr>
 
-### Markdown
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Estatística</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
+          </div>
+          <p>Tableau</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">
+              <div class="w3-center w3-text-white">90%</div>
+            </div>
+          </div>
+          <p>Python e R</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>Machine Learning</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container  w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Línguas</b></p>
+          <p>Português</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-center w3-teal" style="height:24px;width:100%">Nativo</div>
+          </div>
+          <p>Inglês</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+          </div>
+          <p>Espanhol</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
 
-```markdown
-Syntax highlighted code block
+    <!-- End Left Column -->
+    </div>
 
-# Header 1
-## Header 2
-### Header 3
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiências</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Analytics - Estatístico SR / Autoglass</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2019 - <span class="w3-tag w3-teal w3-round">Atualmente</span></h6>
+          <p>Participante da Célula de Pesquisa da área de Serviços da Autoglass, focado em estudo de padrões, tomadas de decisões com dados, criação de modelos preditivos, criação de Dashboards na ferramenta Tableau.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Analytics - Estatístico PL / Autoglass</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2017 - Jun 2019</h6>
+          <p>Criação de Dashboards na ferramenta Tableau, emissão de relatórios, Analytics responsável pela área de Serviços, apoio a outros usuários do Tableau da área. </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Analista Estatístico / Autoglass</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2016 - Jul 2017</h6>
+          <p>Cálculos de risco para Seguradoras, emissão de relatórios </p><br>
+        </div>
+      </div>
 
-- Bulleted
-- List
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Educação</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Sistemas de Informação - Universidade Vila Velha</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2023</h6>
+          <p>Foco em Data Science e Inteligência Artificial</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Estatística - Universidade Federal de Ouro Preto</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2016</h6>
+          <p>Graduação, bolsista CNPQ, fundador da empresa jr, Presidente do Centro Acadêmico</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Ciência da Computação - Universidade Federal de Ouro Preto</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - Interrompido</h6>
+          <p>Troca de curso para Estatística</p><br>
+        </div>
+      </div>
 
-1. Numbered
-2. List
+      <div class="w3-container w3-card w3-white">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-cloud fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Minhas Criações em AppWeb</h2>
+            <div class="w3-container">
+                    <a href="https://www.google.com/"><h5 class="fa fa-file w3-opacity"><b> Gerador e Verificador de CPF</b></h5></a>
 
-**Bold** and _Italic_ and `Code` text
+            </div>
+            <br>
+            <div class="w3-container">
+                    <a href="https://www.google.com/"><h5 class="fa fa-bars w3-opacity"><b> Jogo da Velha</b></h5></a>
+            </div>
+            <br>
+            
 
-[Link](url) and ![Image](src)
-```
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Minhas Redes Sociais.</p>
+  <a href="https://facebook.com/angelopborges"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/tufoborges"><i class="fa fa-instagram w3-hover-opacity"></i></a> 
+  <a href="https://www.linkedin.com/in/angelopborges/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/angelopborges/angelopborges.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
