@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>CV Angelo Borges</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,18 +8,29 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+/* Language switch: each text exists in every language, only the active one is shown */
+html:not([lang="en"]) .en, html:not([lang="pt-BR"]) .pt, html:not([lang="es-419"]) .es {display:none}
+.lang-switch {position:fixed; top:12px; right:12px; z-index:10; width:auto}
+.lang-switch .w3-button.active {background-color:#009688 !important; color:#fff !important}
 </style>
 <body class="w3-light-grey">
+
+<!-- Language Switch -->
+<div class="lang-switch w3-bar w3-white w3-card w3-round">
+  <button class="w3-bar-item w3-button w3-small" data-lang="en" onclick="setLang('en')">EN</button>
+  <button class="w3-bar-item w3-button w3-small" data-lang="pt-BR" onclick="setLang('pt-BR')">PT-BR</button>
+  <button class="w3-bar-item w3-button w3-small" data-lang="es-419" onclick="setLang('es-419')">ES</button>
+</div>
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
   <!-- The Grid -->
   <div class="w3-row-padding">
-  
+
     <!-- Left Column -->
     <div class="w3-third">
-    
+
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <img src="images/forma.jpeg" style="width:100%" alt="foto">
@@ -27,42 +38,59 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container">
           <h3><font color="#0A4942">Angelo Borges</font></h3>
           <hr>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Statistician - Data Science</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><span class="en">Data Scientist | Statistician | AI</span><span class="pt">Cientista de Dados | Estatístico | IA</span><span class="es">Científico de Datos | Estadístico | IA</span></p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Belo Horizonte, MG</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>angelopborges@mail.com</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>angelopborges@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(31) 9 9329-4130</p>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Statistics</p>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i><span class="en">Skills</span><span class="pt">Competências</span><span class="es">Habilidades</span></b></p>
+          <p><span class="en">Statistics</span><span class="pt">Estatística</span><span class="es">Estadística</span></p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:100%">100%</div>
           </div>
-          <p>Data Visualization - Tableau/Looker</p>
+          <p><span class="en">Python and SQL</span><span class="pt">Python e SQL</span><span class="es">Python y SQL</span></p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">
-              <div class="w3-center w3-text-white">90%</div>
-            </div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">95%</div>
           </div>
-          <p>Python e R</p>
+          <p><span class="en">LLMs, NLP and Generative AI</span><span class="pt">LLMs, NLP e IA Generativa</span><span class="es">LLMs, NLP e IA Generativa</span></p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">85%</div>
           </div>
           <p>Machine Learning</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container  w3-round-xlarge w3-teal" style="width:75%">75%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:95%">95%</div>
           </div>
+          <p><span class="en">Data Visualization - Tableau/Looker</span><span class="pt">Visualização de Dados - Tableau/Looker</span><span class="es">Visualización de Datos - Tableau/Looker</span></p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p class="w3-small">
+            <span class="w3-tag w3-teal w3-round w3-margin-bottom">RAG</span>
+            <span class="w3-tag w3-teal w3-round w3-margin-bottom">LangGraph</span>
+            <span class="w3-tag w3-teal w3-round w3-margin-bottom">Prompt Engineering</span>
+            <span class="w3-tag w3-teal w3-round w3-margin-bottom"><span class="en">Graph Neural Networks</span><span class="pt">Redes Neurais de Grafos</span><span class="es">Redes Neuronales de Grafos</span></span>
+            <span class="w3-tag w3-teal w3-round w3-margin-bottom"><span class="en">Geolocation</span><span class="pt">Geolocalização</span><span class="es">Geolocalización</span></span>
+            <span class="w3-tag w3-teal w3-round w3-margin-bottom"><span class="en">Time Series</span><span class="pt">Séries Temporais</span><span class="es">Series de Tiempo</span></span>
+            <span class="w3-tag w3-teal w3-round w3-margin-bottom"><span class="en">Statistical Modeling</span><span class="pt">Modelagem Estatística</span><span class="es">Modelado Estadístico</span></span>
+          </p>
           <br>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>Portuguese</p>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i><span class="en">Languages</span><span class="pt">Idiomas</span><span class="es">Idiomas</span></b></p>
+          <p><span class="en">Portuguese</span><span class="pt">Português</span><span class="es">Portugués</span></p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-center w3-teal" style="height:24px;width:100%">Native Speaker</div>
+            <div class="w3-round-xlarge w3-center w3-teal" style="height:24px;width:100%"><span class="en">Native Speaker</span><span class="pt">Nativo</span><span class="es">Nativo</span></div>
           </div>
-          <p>English</p>
+          <p><span class="en">English</span><span class="pt">Inglês</span><span class="es">Inglés</span></p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:75%"></div>
+            <div class="w3-round-xlarge w3-center w3-teal" style="height:24px;width:75%"><span class="en">Intermediate</span><span class="pt">Intermediário</span><span class="es">Intermedio</span></div>
           </div>
+          <p class="w3-small"><img src="images/duolingo.png" alt="Duolingo" style="width:20px;height:20px;vertical-align:middle;margin-right:6px">Duolingo Score 130</p>
+          <p><span class="en">Spanish</span><span class="pt">Espanhol</span><span class="es">Español</span></p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-center w3-teal" style="height:24px;width:75%"><span class="en">Intermediate</span><span class="pt">Intermediário</span><span class="es">Intermedio</span></div>
+          </div>
+          <p class="w3-small"><img src="images/duolingo.png" alt="Duolingo" style="width:20px;height:20px;vertical-align:middle;margin-right:6px">Duolingo Score 129</p>
           <br>
         </div>
       </div><br>
@@ -72,71 +100,136 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
     <!-- Right Column -->
     <div class="w3-twothird">
-    
+
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experiences</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><span class="en">About</span><span class="pt">Sobre</span><span class="es">Sobre mí</span></h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Data Analyst / willbank</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2021 - <span class="w3-tag w3-teal w3-round">Currently</span></h6>
-          <p>Responsibilities included handling, analyzing, and interpreting data for strategic decision-making within the CX/bot team. Engaged in daily use of Python programming language (Pandas, Numpy, Scipy, Scikit-learn) and data analysis tools such as Looker.
-            Generated customized reports and dashboards to provide insights for business areas. Conducted exploratory data analyses to identify trends and improvement opportunities. Collaborated with other teams to comprehend data needs and develop solutions to meet those requirements.</p>
+          <p class="en">Data Scientist focused on NLP and LLMs. I have worked on chatbots, automated monitoring of customer service interactions and analysis of customer verbalization, as well as geolocation and social graph projects. In practice, I turn data into business decisions.</p>
+          <p class="en">Day to day, that means developing models and putting them into production, not just prototyping. I use statistics and machine learning when they solve the problem, and simpler solutions when nothing more is needed.</p>
+          <p class="pt">Cientista de Dados com foco em NLP e LLMs. Trabalhei com chatbots, monitoria automatizada de atendimentos e análise de verbalização de clientes, além de frentes de geolocalização e grafos sociais. Na prática, transformo dados em decisão de negócio.</p>
+          <p class="pt">No dia a dia, isso significa desenvolver modelos e colocá-los em produção, não só prototipar. Uso estatística e machine learning quando resolvem o problema, e soluções mais simples quando não é preciso mais.</p>
+          <p class="es">Científico de Datos enfocado en NLP y LLMs. He trabajado con chatbots, monitoreo automatizado de atenciones al cliente y análisis de la verbalización de clientes, además de proyectos de geolocalización y grafos sociales. En la práctica, convierto datos en decisiones de negocio.</p>
+          <p class="es">En el día a día, eso significa desarrollar modelos y ponerlos en producción, no solo hacer prototipos. Uso estadística y machine learning cuando resuelven el problema, y soluciones más simples cuando no hace falta más.</p>
           <br>
-          <hr>
-        </div>        
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><span class="en">Work Experiences</span><span class="pt">Experiência Profissional</span><span class="es">Experiencia Laboral</span></h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Data Scientist / Autoglass</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Out 2020 - Jun 2021</span></h6>
-          <p>Transitioned to the Data Science field, working as a Data Engineer and providing support for internal research initiatives.</p>
+          <h5 class="w3-opacity"><b><span class="en">Data Scientist / Mercado Livre</span><span class="pt">Cientista de Dados / Mercado Livre</span><span class="es">Científico de Datos / Mercado Libre</span></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="en">Aug</span><span class="pt">Ago</span><span class="es">Ago</span> 2025 - <span class="w3-tag w3-teal w3-round"><span class="en">Currently</span><span class="pt">Atual</span><span class="es">Actualidad</span></span></h6>
+          <p class="en">Focus on innovative projects involving NLP and Large Language Models (LLMs), supporting and developing LLM-based applications. Also worked on Geolocation, Social Graphs (Graph Neural Networks) and Time Series initiatives.</p>
+          <p class="pt">Foco em projetos inovadores envolvendo NLP e Large Language Models (LLMs), dando suporte e desenvolvendo aplicações com LLM. Atuação também em frentes de Geolocalização, Grafos Sociais (Redes Neurais de Grafos) e Séries Temporais.</p>
+          <p class="es">Enfoque en proyectos innovadores de NLP y Large Language Models (LLMs), dando soporte y desarrollando aplicaciones basadas en LLM. También participación en iniciativas de Geolocalización, Grafos Sociales (Redes Neuronales de Grafos) y Series de Tiempo.</p>
           <br>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Data Analytics / Autoglass</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2017 - Out 2020</h6>
-          <p>Creation of dashboards in Tableau, reports, Analytics responsibilities for the Services department, support for other Tableau users in the department. Participated in the Research cell of the Autoglass Services department, focused on studying patterns, data-driven decision-making, and the development of predictive models. </p>
+          <h5 class="w3-opacity"><b><span class="en">Data Scientist</span><span class="pt">Cientista de Dados</span><span class="es">Científico de Datos</span> / will bank</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="en">Jul 2021 - Aug 2025</span><span class="pt">Jul 2021 - Ago 2025</span><span class="es">Jul 2021 - Ago 2025</span></h6>
+          <p class="en">Focus on innovative projects involving NLP and LLMs within the CX/ChatBot team. Developed and deployed intelligent chatbots, automated monitoring of customer service interactions and advanced analyses of customer verbalization, aiming to improve user experience and optimize processes.
+            Handled, analyzed and interpreted data for strategic decision-making, with daily use of Python (Pandas, Numpy, Scipy, Scikit-learn) and Looker. Built customized reports and dashboards for business areas, conducted exploratory analyses to identify trends and improvement opportunities, and collaborated with other teams to understand their data needs and develop solutions.</p>
+          <p class="pt">Foco em projetos inovadores envolvendo NLP e LLMs na equipe de CX/ChatBot. Desenvolvimento e implementação de chatbots inteligentes, monitoria automatizada de atendimentos e análises avançadas de verbalização de clientes, visando melhorar a experiência do usuário e otimizar processos.
+            Manuseio, análise e interpretação de dados para tomada de decisões estratégicas, com uso diário de Python (Pandas, Numpy, Scipy, Scikit-learn) e Looker. Criação de relatórios e dashboards customizados para as áreas de negócio, análises exploratórias para identificar tendências e oportunidades de melhoria, e colaboração com outras equipes para entender suas necessidades de dados e desenvolver soluções.</p>
+          <p class="es">Enfoque en proyectos innovadores de NLP y LLMs en el equipo de CX/ChatBot. Desarrollo e implementación de chatbots inteligentes, monitoreo automatizado de atenciones al cliente y análisis avanzados de la verbalización de clientes, con el objetivo de mejorar la experiencia del usuario y optimizar procesos.
+            Manejo, análisis e interpretación de datos para la toma de decisiones estratégicas, con uso diario de Python (Pandas, Numpy, Scipy, Scikit-learn) y Looker. Elaboración de reportes y dashboards personalizados para las áreas de negocio, análisis exploratorios para identificar tendencias y oportunidades de mejora, y colaboración con otros equipos para entender sus necesidades de datos y desarrollar soluciones.</p>
           <br>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Statistician Analyst / Autoglass</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2016 - Jul 2017</h6>
-          <p>Risk calculations for insurance companies and made reports.</p>
+          <h5 class="w3-opacity"><b><span class="en">Data Analyst &amp; Scientist</span><span class="pt">Analista Cientista de Dados</span><span class="es">Analista y Científico de Datos</span> / Autoglass</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="en">Aug 2016 - Jul 2021</span><span class="pt">Ago 2016 - Jul 2021</span><span class="es">Ago 2016 - Jul 2021</span></h6>
+          <p class="en">Started as a Statistician, performing risk calculations for insurance companies and statistical reports. Took on Analytics responsibilities for the Services department, creating Tableau dashboards and reports and supporting other Tableau users, and joined the department's Research cell, focused on studying patterns, data-driven decision-making and the development of predictive models. Then transitioned to Data Science, working as a Data Engineer and providing statistical support and knowledge for internal research initiatives.</p>
+          <p class="pt">Início como Estatístico, com cálculos de risco para seguradoras e relatórios estatísticos. Em seguida, responsabilidades de Analytics do departamento de Serviços, com criação de dashboards e relatórios no Tableau e suporte aos demais usuários da ferramenta, e participação na célula de Pesquisa do departamento, com foco no estudo de padrões, tomada de decisão baseada em dados e desenvolvimento de modelos preditivos. Por fim, transição para Data Science, atuando como Engenheiro de Dados e fornecendo suporte e conhecimento estatístico para iniciativas internas de pesquisa.</p>
+          <p class="es">Inicio como Estadístico, con cálculos de riesgo para aseguradoras y reportes estadísticos. Luego, responsabilidades de Analytics del departamento de Servicios, con la creación de dashboards y reportes en Tableau y soporte a los demás usuarios de la herramienta, y participación en la célula de Investigación del departamento, enfocada en el estudio de patrones, la toma de decisiones basada en datos y el desarrollo de modelos predictivos. Por último, transición a Data Science, trabajando como Ingeniero de Datos y brindando soporte y conocimiento estadístico a iniciativas internas de investigación.</p>
+          <br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><span class="en">Education</span><span class="pt">Formação Acadêmica</span><span class="es">Formación Académica</span></h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>AI Engineering - Scoras Academy</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2025</h6>
+          <p class="en">LLM and Small Language Models foundations, LangGraph, RAG (introduction and advanced techniques), LLM Routing, LangFlow and deployment of AI apps.</p>
+          <p class="pt">Fundamentos de LLMs e Small Language Models, LangGraph, RAG (introdução e técnicas avançadas), LLM Routing, LangFlow e deploy de aplicações de IA.</p>
+          <p class="es">Fundamentos de LLMs y Small Language Models, LangGraph, RAG (introducción y técnicas avanzadas), LLM Routing, LangFlow y despliegue de aplicaciones de IA.</p>
+          <br>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b><span class="en">MBA Data Science</span><span class="pt">MBA em Ciência de Dados</span><span class="es">MBA en Ciencia de Datos</span> - XP Educação - IGTI</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - 2023</h6>
+          <p class="en">Data collection and acquisition, NoSQL databases, Hadoop and Spark. Final project delivered using the OpenAI model - ChatGPT: "ChatXPt: FAQ-based customer service bot."</p>
+          <p class="pt">Coleta e aquisição de dados, bancos de dados NoSQL, Hadoop e Spark. Projeto final entregue com o modelo da OpenAI - ChatGPT: "ChatXPt: um bot de atendimento ao cliente baseado em FAQs."</p>
+          <p class="es">Recolección y adquisición de datos, bases de datos NoSQL, Hadoop y Spark. Proyecto final desarrollado con el modelo de OpenAI - ChatGPT: "ChatXPt: un bot de atención al cliente basado en preguntas frecuentes."</p>
+          <br>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b><span class="en">Statistics</span><span class="pt">Estatística</span><span class="es">Estadística</span> - Universidade Federal de Ouro Preto</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2016</h6>
+          <p class="en">Bachelor's degree, CNPQ scholarship recipient (scientific initiation), founder and Vice-President of the junior company ESTOP (today Estatis Jr), President of the Academic Center (CAEST), organizer of the IV SEMEST - Statistics Week.</p>
+          <p class="pt">Bacharelado, bolsista CNPq (Iniciação Científica), fundador e Vice-Presidente da empresa júnior ESTOP (hoje Estatis Jr), Presidente do Centro Acadêmico (CAEST), organizador da IV SEMEST - Semana da Estatística.</p>
+          <p class="es">Licenciatura, becario del CNPq (Iniciación Científica), fundador y Vicepresidente de la empresa junior ESTOP (hoy Estatis Jr), Presidente del Centro de Estudiantes (CAEST), organizador de la IV SEMEST - Semana de la Estadística.</p>
           <br>
         </div>
       </div>
 
       <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><span class="en">Certifications</span><span class="pt">Certificações</span><span class="es">Certificaciones</span></h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Statistic - Universidade Federal de Ouro Preto</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2016</h6>
-          <p>Bachelor's degree, CNPQ scholarship recipient, founder of the junior company, President of the Academic Center.</p>
-          <br>
+          <h5 class="w3-opacity"><b>AWS Certified AI Practitioner - Amazon Web Services</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2025 - Jun 2028</h6>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>MBA Data Science - XP Educação - IGTI</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - 2023</h6>
-          <p>Final project delivered using the OpenAI model - ChatGPT: "ChatXPt: FAQ-based customer service bot."</p><br>
+          <h5 class="w3-opacity"><b>Tableau Data Scientist - Tableau</b></h5>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Tableau Analyst - Tableau</b></h5>
+          <br>
         </div>
       </div>
-            
+
 
     <!-- End Right Column -->
     </div>
-    
+
   <!-- End Grid -->
   </div>
-  
+
   <!-- End Page Container -->
 </div>
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>My Social Medias.</p>
-  <a href="https://www.instagram.com/tufoborges"><i class="fa fa-instagram w3-hover-opacity"></i></a> 
+  <p><span class="en">My Social Medias.</span><span class="pt">Minhas Redes Sociais.</span><span class="es">Mis Redes Sociales.</span></p>
+  <a href="https://www.instagram.com/tufoborges"><i class="fa fa-instagram w3-hover-opacity"></i></a>
   <a href="https://www.linkedin.com/in/angelopborges/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <a href="https://github.com/angelopborges"><i class="fa fa-github w3-hover-opacity"></i></a>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+
+<script>
+// Language: ?lang=en|pt-BR|es in the URL wins, then the saved choice, then English
+var TITLES = {'en': 'CV Angelo Borges', 'pt-BR': 'Currículo Angelo Borges', 'es-419': 'Currículum Angelo Borges'};
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  document.title = TITLES[lang];
+  document.querySelectorAll('.lang-switch .w3-button').forEach(function (b) {
+    b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+  });
+  try { localStorage.setItem('cv-lang', lang); } catch (e) {}
+}
+(function () {
+  var lang = new URLSearchParams(location.search).get('lang');
+  if (!lang) { try { lang = localStorage.getItem('cv-lang'); } catch (e) {} }
+  lang = (lang || '').toLowerCase();
+  setLang(lang.indexOf('pt') === 0 ? 'pt-BR' : lang.indexOf('es') === 0 ? 'es-419' : 'en');
+})();
+</script>
 
 </body>
 </html>
